@@ -1,6 +1,10 @@
 import React, {useState} from 'react';
 
-function Size() {
+let moves = 0;
+
+let time = '00:00'
+
+function Game (){
     let [sizes, setSize] = useState('4x4')
     function x3(){
         setSize(sizes = '3x3')
@@ -22,9 +26,43 @@ function Size() {
     }
     return (
         <div>
+            <div className="buttons-container">
+                <div className="btn-wrapper">
+                    <button id="shuffle">
+                        Shuffle and start
+                    </button>
+                    <button id="stop">
+                        Stop
+                    </button>
+                    <button id="save">
+                        Save
+                    </button>
+                    <button id="result">
+                        Result
+                    </button>
+                </div>
+            </div>
+
+            <div className="counts">
+                <p className="moves">
+                    Moves: {moves}
+                </p>
+                <p className="time">
+                    Time: {time}
+                </p>
+            </div>
+
+            <div className="gem-wrapper">
+                <div className="gems">
+
+                </div>
+
+            </div>
+
             <p className="size" id="frameSize">
                 Frame size: {sizes}
             </p>
+
             <div className="other-size">
                 <p>Other size:</p>
                 <div className="btnSize">
@@ -40,5 +78,4 @@ function Size() {
     );
 }
 
-
-export default Size;
+export default Game;
