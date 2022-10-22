@@ -1,29 +1,38 @@
 import React, {useState} from 'react';
 
-let moves = 0;
-
 let time = '00:00'
 
+let id = 0;
+
 function Game (){
-    let [sizes, setSize] = useState('4x4')
+    let [moves, setMoves] = useState(0);
+    let [sizes, setSize] = useState('4x4');
     function x3(){
         setSize(sizes = '3x3')
+        id = 3 * 3;
     }
     function x4(){
         setSize(sizes = '4x4')
+        id = 4 * 4;
     }
     function x5(){
         setSize(sizes = '5x5')
+        id = 5 * 5;
     }
     function x6(){
         setSize(sizes = '6x6')
+        id = 6 * 6;
     }
     function x7(){
         setSize(sizes = '7x7')
+        id = 7 * 7;
     }
     function x8(){
         setSize(sizes = '8x8')
+        id = 8 * 8;
     }
+
+
     return (
         <div>
             <div className="buttons-container">
