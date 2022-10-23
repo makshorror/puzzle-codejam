@@ -36,15 +36,35 @@
   font-size: 20px;
   font-weight: 500;
   background-color: #0D9095;
-  border: none;
+  border: 3px solid rgba(234, 156, 255, 0);
   border-radius: 5px;
   color: white;
   transition: 0.25s;
 }
 .buttons-container .btn-wrapper button:hover {
-  color: #F03827;
+  color: #ea9cff;
   background-color: #088285;
   cursor: pointer;
+  border: 3px solid rgb(234, 156, 255);
+}
+.buttons-container .btn-wrapper button:active {
+  color: #088285;
+  background-color: #ea9cff;
+}
+.buttons-container .btn-wrapper #shuffle {
+  animation: border 1s infinite;
+}
+@keyframes border {
+  0% {
+    border: 3px solid rgba(234, 156, 255, 0);
+  }
+  50% {
+    color: #ea9cff;
+    border: 3px solid rgb(234, 156, 255);
+  }
+  100% {
+    border: 3px solid rgba(234, 156, 255, 0);
+  }
 }
 .buttons-container .btn-wrapper .active {
   padding: 10px 25px;
