@@ -53,6 +53,37 @@
       color: #088285;
       background-color: #ea9cff;
     }
+
+    #stopActive {
+      background-color: #bbbbbb;
+      color: black;
+    }
+
+    #stopActive:hover {
+      background-color: #707070;
+      color: #ffffff;
+      border: 3px solid #bbbbbb;
+    }
+
+    #stopActive:active {
+      background-color: black;
+      color: #ffffff;
+    }
+
+
+
+
+    #stop {
+      background-color: #0D9095;
+      color: white;
+    }
+
+    #stop:active{
+      color: #088285;
+      background-color: #ea9cff;
+    }
+
+
     #shuffle {
       animation: border 1s infinite;
     }

@@ -51,6 +51,27 @@
   color: #088285;
   background-color: #ea9cff;
 }
+.buttons-container .btn-wrapper #stopActive {
+  background-color: #bbbbbb;
+  color: black;
+}
+.buttons-container .btn-wrapper #stopActive:hover {
+  background-color: #707070;
+  color: #ffffff;
+  border: 3px solid #bbbbbb;
+}
+.buttons-container .btn-wrapper #stopActive:active {
+  background-color: black;
+  color: #ffffff;
+}
+.buttons-container .btn-wrapper #stop {
+  background-color: #0D9095;
+  color: white;
+}
+.buttons-container .btn-wrapper #stop:active {
+  color: #088285;
+  background-color: #ea9cff;
+}
 .buttons-container .btn-wrapper #shuffle {
   animation: border 1s infinite;
 }
